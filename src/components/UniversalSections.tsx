@@ -9,7 +9,7 @@ const UniversalSections = () => {
 
   const featureCards = [
     {
-      image: '/lovable-uploads/0510d0d8-073f-4611-a4c3-0b13a04a9edc.png',
+      image: '/lovable-uploads/c50d0b02-94b7-4c3c-9e09-798134cabd1d.png',
       title: 'Gourmet Dining',
       description: 'Authentic Jamaican cuisine with international flair'
     },

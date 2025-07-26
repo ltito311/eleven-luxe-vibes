@@ -15,7 +15,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/lovable-uploads/0510d0d8-073f-4611-a4c3-0b13a04a9edc.png"
+                src="/lovable-uploads/c50d0b02-94b7-4c3c-9e09-798134cabd1d.png"
                 alt="Eleven Restaurant interior with green wall and luxury seating"
                 className="w-full h-auto rounded-lg shadow-luxury"
               />
