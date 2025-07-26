@@ -1,0 +1,196 @@
+import Navigation from '@/components/Navigation';
+import UniversalSections from '@/components/UniversalSections';
+import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { Phone, Mail, Instagram, MapPin, Clock } from 'lucide-react';
+
+const Contact = () => {
+  const handleReservation = () => {
+    window.open('https://form.typeform.com/to/B36XKi0i', '_self');
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="pt-24 pb-20 bg-gradient-dark">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+            Contact Us
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Get in touch for reservations, events, or any inquiries
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Form & Info Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            
+            {/* Contact Form */}
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="text-2xl text-foreground">Send us a Message</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-foreground">Name</Label>
+                  <Input 
+                    id="name" 
+                    placeholder="Your full name" 
+                    className="bg-input border-border"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-foreground">Email</Label>
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="your.email@example.com" 
+                    className="bg-input border-border"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message" className="text-foreground">Message</Label>
+                  <Textarea 
+                    id="message" 
+                    placeholder="Tell us about your inquiry, event, or special requests..." 
+                    rows={6}
+                    className="bg-input border-border resize-none"
+                  />
+                </div>
+                <Button variant="luxury" size="lg" className="w-full">
+                  Send Message
+                </Button>
+                <p className="text-sm text-muted-foreground text-center">
+                  This is a placeholder form. For actual reservations, please use our booking system below.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <Card className="bg-card border-border">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Get in Touch</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <Phone className="text-primary flex-shrink-0" size={20} />
+                      <div>
+                        <p className="text-foreground font-medium">Phone</p>
+                        <p className="text-muted-foreground">+1 (876) XXX-XXXX</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Mail className="text-primary flex-shrink-0" size={20} />
+                      <div>
+                        <p className="text-foreground font-medium">Email</p>
+                        <p className="text-muted-foreground">elevenreservations@gmail.com</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Instagram className="text-primary flex-shrink-0" size={20} />
+                      <div>
+                        <p className="text-foreground font-medium">Instagram</p>
+                        <p className="text-muted-foreground">@elevenwess</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <MapPin className="text-primary flex-shrink-0" size={20} />
+                      <div>
+                        <p className="text-foreground font-medium">Address</p>
+                        <p className="text-muted-foreground">1 Beckford Street<br />Savanna-la-Mar, Jamaica</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Clock className="text-primary" size={20} />
+                    <h3 className="text-xl font-semibold text-foreground">Operating Hours</h3>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Wed - Sat</span>
+                      <span className="text-foreground">5:00 PM - 2:00 AM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Sunday Brunch</span>
+                      <span className="text-foreground">11:00 AM - 4:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Mon - Tue</span>
+                      <span className="text-foreground">Closed</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              Visit Us
+            </h2>
+            <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <MapPin size={20} />
+              <span>1 Beckford Street, Savanna-la-Mar, Jamaica</span>
+            </div>
+          </div>
+          <div className="max-w-4xl mx-auto h-96 bg-muted rounded-lg overflow-hidden shadow-luxury">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.8647384982567!2d-78.12345678901234!3d18.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDA3JzI0LjQiTiA3OMKwMDcnMjQuNCJX!5e0!3m2!1sen!2s!4v1234567890123"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Eleven Restaurant & Lounge Location - Savanna-la-Mar, Jamaica"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Reservation CTA */}
+      <section className="py-20 bg-gradient-dark text-center">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Ready to Dine with Us?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Secure your table for an unforgettable culinary experience at Eleven Restaurant & Lounge.
+          </p>
+          <Button 
+            variant="luxury" 
+            size="xl"
+            onClick={handleReservation}
+            className="shadow-luxury"
+          >
+            Reserve Now
+          </Button>
+        </div>
+      </section>
+
+      <UniversalSections />
+      <Footer />
+    </div>
+  );
+};
+
+export default Contact;

@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -62,6 +65,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-dark': 'var(--gradient-dark)',
+				'gradient-overlay': 'var(--gradient-overlay)',
+			},
+			boxShadow: {
+				'luxury': 'var(--shadow-luxury)',
+				'gold': 'var(--shadow-gold)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
