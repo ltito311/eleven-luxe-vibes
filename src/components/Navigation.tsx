@@ -34,27 +34,19 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/cd5eb682-2ba4-4b27-bcbf-55e6463bddd3.png" 
-              alt="Eleven Restaurant Logo" 
-              className="h-8 md:h-10 w-auto brightness-100 contrast-125 drop-shadow-sm"
-              style={{ 
-                filter: 'brightness(1.2) contrast(1.1)',
-                backgroundColor: 'transparent'
-              }}
-              onError={(e) => {
-                console.log('Logo failed to load, trying fallback');
-                e.currentTarget.src = "/lovable-uploads/0510d0d8-073f-4611-a4c3-0b13a04a9edc.png";
-                e.currentTarget.onerror = () => {
-                  console.log('Fallback logo also failed, showing text');
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                };
-              }}
-              onLoad={() => console.log('Logo loaded successfully')}
-            />
-            <span className="hidden text-2xl font-bold text-primary">ELEVEN</span>
+          <Link to="/" className="logo-container">
+            <svg 
+              className="logo-svg h-8 md:h-10 w-auto" 
+              viewBox="0 0 350 100" 
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Eleven Restaurant Logo"
+            >
+              <path id="bar-path-1" className="bar-path" d="M 5 20 L 65 20" />
+              <path id="bar-path-2" className="bar-path" d="M 5 40 L 85 40" />
+              <path id="bar-path-3" className="bar-path" d="M 5 60 L 105 60" />
+              <text className="main-text" x="135" y="60">ELEVEN</text>
+              <text className="subtitle" x="138" y="78">RESTAURANT AND LOUNGE</text>
+            </svg>
           </Link>
 
           {/* Desktop Navigation */}
