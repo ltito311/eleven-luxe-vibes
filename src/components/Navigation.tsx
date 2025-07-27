@@ -38,8 +38,23 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/cd5eb682-2ba4-4b27-bcbf-55e6463bddd3.png" 
               alt="Eleven Restaurant Logo" 
-              className="h-8 md:h-10 w-auto"
+              className="h-8 md:h-10 w-auto brightness-100 contrast-125 drop-shadow-sm"
+              style={{ 
+                filter: 'brightness(1.2) contrast(1.1)',
+                backgroundColor: 'transparent'
+              }}
+              onError={(e) => {
+                console.log('Logo failed to load, trying fallback');
+                e.currentTarget.src = "/lovable-uploads/0510d0d8-073f-4611-a4c3-0b13a04a9edc.png";
+                e.currentTarget.onerror = () => {
+                  console.log('Fallback logo also failed, showing text');
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                };
+              }}
+              onLoad={() => console.log('Logo loaded successfully')}
             />
+            <span className="hidden text-2xl font-bold text-primary">ELEVEN</span>
           </Link>
 
           {/* Desktop Navigation */}
