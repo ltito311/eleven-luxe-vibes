@@ -34,8 +34,12 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary">
-            ELEVEN
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/cd5eb682-2ba4-4b27-bcbf-55e6463bddd3.png" 
+              alt="Eleven Restaurant Logo" 
+              className="h-8 md:h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
