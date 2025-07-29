@@ -25,15 +25,15 @@ const UniversalSections = () => {
     },
     {
       image: '/lovable-uploads/df2e13fe-7905-4aa9-8a2a-a1909af42216.png',
-      title: 'Karaoke Fridays',
-      description: 'Live entertainment and vibrant nightlife'
+      title: 'Karaoke on Sunday Night',
+      description: 'Join us for a relaxed Sunday evening filled with great music and good company. Sing your heart out!'
     },
   ];
 
   const testimonials = [
-    "Best lounge in Westmoreland.",
-    "The cocktails? INSANE.",
-    "Vibe unmatched, every single time."
+    "The ambiance was incredible, and the service was top-notch. A truly memorable evening!",
+    "Outstanding food quality and exceptional cocktails. Worth every visit.",
+    "Perfect atmosphere for special occasions. The staff exceeded all expectations."
   ];
 
   return (
@@ -42,7 +42,7 @@ const UniversalSections = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-foreground mb-16">
-            Experience Eleven
+            Experience at Eleven
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featureCards.map((card, index) => (
@@ -80,6 +80,7 @@ const UniversalSections = () => {
               <span className="text-lg">@elevenwess</span>
             </div>
           </div>
+          <script src="https://static.elfsight.com/platform/platform.js" async></script>
           <div className="elfsight-app-e34192b5-821d-49c6-a926-ff653ffd2dca" data-elfsight-app-lazy></div>
         </div>
       </section>
@@ -142,7 +143,7 @@ const UniversalSections = () => {
           </div>
           <div className="max-w-4xl mx-auto h-96 bg-muted rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.0647262915223!2d-76.793306!3d17.9744569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb3f40f8c41105%3A0xe94ff2d7fcf61d65!2sEleven%20Lounge!5e0!3m2!1sen!2sjm!4v1722115244996!5m2!1sen!2sjm"
+              src="https://maps.app.goo.gl/pLtdm9jMsRmMHjnbA"
               width="100%"
               height="100%"
               style={{ border: 0 }}

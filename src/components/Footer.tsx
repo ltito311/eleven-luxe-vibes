@@ -32,12 +32,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-foreground mb-6">Quick Links</h3>
             <nav className="space-y-3">
               <Link 
-                to="/" 
-                className="block text-muted-foreground hover:text-primary transition-colors duration-300"
-              >
-                Home
-              </Link>
-              <Link 
                 to="/about" 
                 className="block text-muted-foreground hover:text-primary transition-colors duration-300"
               >

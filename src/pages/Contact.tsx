@@ -80,6 +80,24 @@ const Contact = () => {
               <Card className="bg-card border-border">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-foreground mb-4">Get in Touch</h3>
+                  <div className="flex gap-4 mb-6">
+                    <Button 
+                      variant="luxury" 
+                      size="lg"
+                      onClick={handleReservation}
+                      className="flex-1"
+                    >
+                      Book Now
+                    </Button>
+                    <Button 
+                      variant="luxury" 
+                      size="lg"
+                      onClick={() => window.open('tel:+1876XXXXXXX')}
+                      className="flex-1"
+                    >
+                      Give Us a Call
+                    </Button>
+                  </div>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <Phone className="text-primary flex-shrink-0" size={20} />
@@ -121,15 +139,19 @@ const Contact = () => {
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-between">
+                      <span className="text-muted-foreground">Mon</span>
+                      <span className="text-foreground">5:00 PM - 2:00 AM</span>
+                    </div>
+                    <div className="flex justify-between">
                       <span className="text-muted-foreground">Wed - Sat</span>
                       <span className="text-foreground">5:00 PM - 2:00 AM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Sunday Brunch</span>
-                      <span className="text-foreground">11:00 AM - 4:00 PM</span>
+                      <span className="text-muted-foreground">Sunday</span>
+                      <span className="text-foreground">5:00 PM - 11:00 PM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Mon - Tue</span>
+                      <span className="text-muted-foreground">Tuesday</span>
                       <span className="text-foreground">Closed</span>
                     </div>
                   </div>

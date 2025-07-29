@@ -8,23 +8,43 @@ const HeroSlideshow = () => {
   const slides = [
     {
       image: '/lovable-uploads/1276fe18-4ab1-4034-8294-c26116f74d27.png',
-      alt: 'LADEN Event at Eleven Restaurant & Lounge'
+      alt: 'LADEN Event at Eleven Restaurant & Lounge',
+      title: 'CELEBRATE WITH US',
+      subtitle: "You're invited to celebrate with us as we mark our second year in action! Join us, install, and secure your exclusive spot on our VIP deck for an unforgettable experience. Don't miss out.",
+      ctaText: 'Reserve your place today',
+      buttonText: 'Reserve'
     },
     {
       image: '/lovable-uploads/6dc3e49e-dfa8-4eac-bb66-dba581445057.png',
-      alt: 'Signature drinks with Eleven branded bags'
+      alt: 'Signature drinks with Eleven branded bags',
+      title: 'SIGNATURE COCKTAILS',
+      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      ctaText: 'Learn More',
+      buttonText: 'Explore'
     },
     {
       image: '/lovable-uploads/ee776c1a-210f-4fc1-b8c1-6958a29adaca.png',
-      alt: 'Elegant dining setup at Eleven Restaurant'
+      alt: 'Elegant dining setup at Eleven Restaurant',
+      title: 'FINE DINING',
+      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      ctaText: 'Learn More',
+      buttonText: 'Explore'
     },
     {
       image: '/lovable-uploads/4f1acefa-a25a-453d-8979-e2163fc0a5dc.png',
-      alt: 'Luxury interior with green wall at Eleven Lounge'
+      alt: 'Luxury interior with green wall at Eleven Lounge',
+      title: 'LUXURY LOUNGE',
+      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      ctaText: 'Learn More',
+      buttonText: 'Explore'
     },
     {
       image: '/lovable-uploads/d4bc3f93-63d2-44d7-844c-398cae6561ca.png',
-      alt: 'Cocktail toast at Eleven bar in Savanna-la-Mar'
+      alt: 'Cocktail toast at Eleven bar in Savanna-la-Mar',
+      title: 'UNFORGETTABLE MOMENTS',
+      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      ctaText: 'Learn More',
+      buttonText: 'Explore'
     },
   ];
 
@@ -44,8 +64,13 @@ const HeroSlideshow = () => {
     setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
   };
 
-  const handleReservation = () => {
-    window.open('https://form.typeform.com/to/B36XKi0i', '_self');
+  const handleSlideAction = (slide: typeof slides[0]) => {
+    if (slide.buttonText === 'Reserve') {
+      window.open('https://form.typeform.com/to/B36XKi0i', '_self');
+    } else {
+      // For other slides, you can add specific actions here
+      console.log('Explore action for', slide.title);
+    }
   };
 
   return (
@@ -87,18 +112,18 @@ const HeroSlideshow = () => {
       <div className="relative z-10 h-full flex items-center justify-center text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-poppins tracking-tight">
-            MEET ME AT ELEVEN
+            {slides[currentSlide].title}
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
-            Cocktails, Culture, and Culinary Fire.
+            {slides[currentSlide].subtitle}
           </p>
           <Button 
             variant="luxury" 
             size="xl"
-            onClick={handleReservation}
+            onClick={() => handleSlideAction(slides[currentSlide])}
             className="shadow-luxury"
           >
-            BOOK NOW
+            {slides[currentSlide].buttonText}
           </Button>
         </div>
       </div>

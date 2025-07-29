@@ -17,7 +17,6 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Menu', path: '/menu' },
     { name: 'Contact', path: '/contact' },
@@ -68,7 +67,7 @@ const Navigation = () => {
               onClick={handleReservation}
               className="ml-4"
             >
-              Reserve
+              Book Now
             </Button>
           </div>
 
@@ -103,7 +102,7 @@ const Navigation = () => {
                 onClick={handleReservation}
                 className="w-full"
               >
-                Reserve
+                Book Now
               </Button>
             </div>
           </div>
