@@ -7,11 +7,11 @@ const HeroSlideshow = () => {
 
   const slides = [
     {
-      image: '/lovable-uploads/d8a6c806-e606-47bd-9798-9ea24a5edaa5.png',
+      image: '/lovable-uploads/1276fe18-4ab1-4034-8294-c26116f74d27.png',
       alt: 'LADEN Event at Eleven Restaurant & Lounge'
     },
     {
-      image: '/lovable-uploads/e70d8a70-08b5-4fef-91b9-6adf37ad29aa.png',
+      image: '/lovable-uploads/6dc3e49e-dfa8-4eac-bb66-dba581445057.png',
       alt: 'Signature drinks with Eleven branded bags'
     },
     {
@@ -19,7 +19,7 @@ const HeroSlideshow = () => {
       alt: 'Elegant dining setup at Eleven Restaurant'
     },
     {
-      image: '/lovable-uploads/8c3cd4f8-9dcc-4cc3-80a4-6681e72b489e.png',
+      image: '/lovable-uploads/4f1acefa-a25a-453d-8979-e2163fc0a5dc.png',
       alt: 'Luxury interior with green wall at Eleven Lounge'
     },
     {

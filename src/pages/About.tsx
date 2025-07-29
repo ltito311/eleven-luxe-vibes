@@ -26,7 +26,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/lovable-uploads/2bbfff28-4ccd-4c6c-9af3-90df9be53630.png"
+                src="/lovable-uploads/0156515c-8ba6-4499-9fd1-445df9cf8a8c.png"
                 alt="Eleven Restaurant exterior at night in Savanna-la-Mar"
                 className="w-full h-auto rounded-lg shadow-luxury"
               />

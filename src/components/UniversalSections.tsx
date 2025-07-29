@@ -9,22 +9,22 @@ const UniversalSections = () => {
 
   const featureCards = [
     {
-      image: '/lovable-uploads/c50d0b02-94b7-4c3c-9e09-798134cabd1d.png',
+      image: '/lovable-uploads/17941b00-ca86-4e4c-8639-4115a95ae8a7.png',
       title: 'Gourmet Dining',
       description: 'Authentic Jamaican cuisine with international flair'
     },
     {
-      image: '/lovable-uploads/9f550ed6-2a67-4d2c-8105-1a230dcee533.png',
+      image: '/lovable-uploads/748e6f00-ba22-4159-8b64-c8ad15cb16b2.png',
       title: 'Signature Cocktails',
       description: 'Handcrafted drinks using premium spirits'
     },
     {
-      image: '/lovable-uploads/2bbfff28-4ccd-4c6c-9af3-90df9be53630.png',
+      image: '/lovable-uploads/4e50d1e1-d5c0-4aac-afda-f32c6831604c.png',
       title: 'Elegant Lounge',
       description: 'Sophisticated atmosphere for any occasion'
     },
     {
-      image: '/lovable-uploads/748e6f00-ba22-4159-8b64-c8ad15cb16b2.png',
+      image: '/lovable-uploads/df2e13fe-7905-4aa9-8a2a-a1909af42216.png',
       title: 'Karaoke Fridays',
       description: 'Live entertainment and vibrant nightlife'
     },
@@ -80,16 +80,7 @@ const UniversalSections = () => {
               <span className="text-lg">@elevenwess</span>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[1, 2, 3, 4, 5, 6].map((index) => (
-              <div
-                key={index}
-                className="aspect-square bg-muted rounded-lg flex items-center justify-center"
-              >
-                <Instagram size={32} className="text-muted-foreground" />
-              </div>
-            ))}
-          </div>
+          <div className="elfsight-app-e34192b5-821d-49c6-a926-ff653ffd2dca" data-elfsight-app-lazy></div>
         </div>
       </section>
 
@@ -151,7 +142,7 @@ const UniversalSections = () => {
           </div>
           <div className="max-w-4xl mx-auto h-96 bg-muted rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.8647384982567!2d-78.12345678901234!3d18.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDA3JzI0LjQiTiA3OMKwMDcnMjQuNCJX!5e0!3m2!1sen!2s!4v1234567890123"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.0647262915223!2d-76.793306!3d17.9744569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb3f40f8c41105%3A0xe94ff2d7fcf61d65!2sEleven%20Lounge!5e0!3m2!1sen!2sjm!4v1722115244996!5m2!1sen!2sjm"
               width="100%"
               height="100%"
               style={{ border: 0 }}
