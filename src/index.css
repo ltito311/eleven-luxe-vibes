@@ -182,3 +182,14 @@ All colors MUST be HSL.
     @apply font-poppins;
   }
 }
+
+/* Hide Elfsight branding */
+.eapps-widget-toolbar,
+.eapps-widget-toolbar-panel,
+.eapps-link,
+.eapps-widget-menu,
+[class*="eapps"][class*="branding"],
+[class*="eapps"][class*="logo"],
+[class*="eapps-widget"][class*="promo"] {
+  display: none !important;
+}
