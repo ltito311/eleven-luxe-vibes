@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Quote, Star, MapPin, Instagram } from 'lucide-react';
+import InstagramFeed from './InstagramFeed';
 
 const UniversalSections = () => {
   const handleReservation = () => {
@@ -80,8 +81,7 @@ const UniversalSections = () => {
               <span className="text-lg">@elevenwess</span>
             </div>
           </div>
-          <script src="https://static.elfsight.com/platform/platform.js" async></script>
-          <div className="elfsight-app-e34192b5-821d-49c6-a926-ff653ffd2dca" data-elfsight-app-lazy></div>
+          <InstagramFeed />
         </div>
       </section>
 
