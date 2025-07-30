@@ -183,21 +183,16 @@ All colors MUST be HSL.
   }
 }
 
-/* Hide Elfsight branding */
+/* Hide Elfsight branding - be specific to avoid hiding content */
 .eapps-widget-toolbar,
-.eapps-widget-toolbar-panel,
-.eapps-link,
-.eapps-widget-menu,
+.eapps-link[href*="elfsight"],
 [class*="eapps"][class*="branding"],
 [class*="eapps"][class*="logo"],
 [class*="eapps-widget"][class*="promo"],
-.eapps-widget-footer,
-.eapps-widget-footer *,
-[href*="elfsight.com"],
 [class*="eapps-widget-footer"],
-[class*="eapps-instagram-feed-footer"],
-div[class*="eapps"]:last-child,
-.eapps-instagram-feed .eapps-widget-toolbar {
+a[href*="elfsight.com"],
+.eapps-instagram-feed [class*="footer"],
+.eapps-instagram-feed [class*="branding"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
