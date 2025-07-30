@@ -190,6 +190,17 @@ All colors MUST be HSL.
 .eapps-widget-menu,
 [class*="eapps"][class*="branding"],
 [class*="eapps"][class*="logo"],
-[class*="eapps-widget"][class*="promo"] {
+[class*="eapps-widget"][class*="promo"],
+.eapps-widget-footer,
+.eapps-widget-footer *,
+[href*="elfsight.com"],
+[class*="eapps-widget-footer"],
+[class*="eapps-instagram-feed-footer"],
+div[class*="eapps"]:last-child,
+.eapps-instagram-feed .eapps-widget-toolbar {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
