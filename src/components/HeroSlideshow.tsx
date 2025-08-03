@@ -10,31 +10,31 @@ const HeroSlideshow = () => {
       image: '/lovable-uploads/1276fe18-4ab1-4034-8294-c26116f74d27.png',
       alt: 'LADEN Event at Eleven Restaurant & Lounge',
       title: 'CELEBRATE WITH US',
-      subtitle: "You're invited to celebrate with us as we mark our second year in action! Join us, install, and secure your exclusive spot on our VIP deck for an unforgettable experience. Don't miss out.",
+      subtitle: 'Luxury meets authenticity.',
       ctaText: 'Reserve your place today',
       buttonText: 'Reserve'
     },
     {
-      image: '/lovable-uploads/6dc3e49e-dfa8-4eac-bb66-dba581445057.png',
-      alt: 'Signature drinks with Eleven branded bags',
+      image: '/lovable-uploads/40a3c542-300b-4b7a-8a16-b13de1e21e98.png',
+      alt: 'Signature cocktails at Eleven Restaurant',
       title: 'SIGNATURE COCKTAILS',
-      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      subtitle: 'Luxury meets authenticity.',
       ctaText: 'Learn More',
       buttonText: 'Explore'
     },
     {
-      image: '/lovable-uploads/ee776c1a-210f-4fc1-b8c1-6958a29adaca.png',
+      image: '/lovable-uploads/8d494d39-a79a-4e5d-8ef3-03c96ce43fd0.png',
       alt: 'Elegant dining setup at Eleven Restaurant',
       title: 'FINE DINING',
-      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      subtitle: 'Luxury meets authenticity.',
       ctaText: 'Learn More',
       buttonText: 'Explore'
     },
     {
-      image: '/lovable-uploads/4f1acefa-a25a-453d-8979-e2163fc0a5dc.png',
-      alt: 'Luxury interior with green wall at Eleven Lounge',
-      title: 'LUXURY LOUNGE',
-      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
+      image: '/lovable-uploads/ca3b7cea-4f05-4b60-8bf0-0048e0335bec.png',
+      alt: 'Food and drinks at Eleven Restaurant',
+      title: 'CULINARY EXCELLENCE',
+      subtitle: 'Luxury meets authenticity.',
       ctaText: 'Learn More',
       buttonText: 'Explore'
     },
@@ -109,8 +109,8 @@ const HeroSlideshow = () => {
       </button>
 
       {/* Content */}
-      <div className="absolute bottom-8 right-8 z-10 max-w-md">
-        <div className="bg-black/30 backdrop-blur-sm rounded-lg p-6 text-right">
+      <div className="absolute bottom-8 left-8 z-10 max-w-md">
+        <div className="bg-black/30 backdrop-blur-sm rounded-lg p-6 text-left">
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-3 font-poppins tracking-tight">
             {slides[currentSlide].title}
           </h1>

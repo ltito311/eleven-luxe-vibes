@@ -26,6 +26,10 @@ const Navigation = () => {
     window.open('https://form.typeform.com/to/B36XKi0i', '_self');
   };
 
+  const handleCall = () => {
+    window.open('tel:+18762239926', '_self');
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-black/90 backdrop-blur-sm shadow-luxury' : 'bg-transparent'
@@ -62,10 +66,18 @@ const Navigation = () => {
               </Link>
             ))}
             <Button 
+              variant="outline" 
+              size="lg"
+              onClick={handleCall}
+              className="ml-4"
+            >
+              Call Us
+            </Button>
+            <Button 
               variant="reserve" 
               size="lg"
               onClick={handleReservation}
-              className="ml-4"
+              className="ml-2"
             >
               Book Now
             </Button>
@@ -96,6 +108,14 @@ const Navigation = () => {
                   {link.name}
                 </Link>
               ))}
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={handleCall}
+                className="w-full mb-2"
+              >
+                Call Us
+              </Button>
               <Button 
                 variant="reserve" 
                 size="lg"

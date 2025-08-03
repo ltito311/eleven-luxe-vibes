@@ -142,13 +142,13 @@ const UniversalSections = () => {
             </div>
           </div>
           <div className="max-w-4xl mx-auto h-96 bg-muted rounded-lg overflow-hidden">
-            <iframe
-              src="https://maps.app.goo.gl/pLtdm9jMsRmMHjnbA"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.4210798482045!2d-78.1325803!3d18.227660399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ed96fb25e195171%3A0x3db6dcad7cdeb3e8!2sEleven%20Restaurant%20and%20Lounge!5e1!3m2!1sen!2sjm!4v1754214087527!5m2!1sen!2sjm" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               title="Eleven Restaurant & Lounge Location"
             />
