@@ -9,42 +9,42 @@ const HeroSlideshow = () => {
     {
       image: '/lovable-uploads/1276fe18-4ab1-4034-8294-c26116f74d27.png',
       alt: 'LADEN Event at Eleven Restaurant & Lounge',
-      title: 'CELEBRATE WITH US',
-      subtitle: 'Luxury meets authenticity.',
-      ctaText: 'Reserve your place today',
-      buttonText: 'Reserve'
+      title: 'Celebrate With us [BLACK IS SEXY]',
+      subtitle: '',
+      ctaText: '',
+      buttonText: 'buy your tickets'
     },
     {
-      image: '/lovable-uploads/40a3c542-300b-4b7a-8a16-b13de1e21e98.png',
-      alt: 'Signature cocktails at Eleven Restaurant',
-      title: 'SIGNATURE COCKTAILS',
-      subtitle: 'Luxury meets authenticity.',
-      ctaText: 'Learn More',
-      buttonText: 'Explore'
+      image: '/lovable-uploads/f29b347c-abdd-4904-b69b-b2fbfa8edaa7.png',
+      alt: 'Signature cocktail at Eleven Restaurant',
+      title: 'Your Vibe, Poured:',
+      subtitle: 'The perfect pour for the perfect night. From classic favorites to new creations, find the drink that matches your energy.',
+      ctaText: '',
+      buttonText: 'checkout our menu'
     },
     {
-      image: '/lovable-uploads/8d494d39-a79a-4e5d-8ef3-03c96ce43fd0.png',
+      image: '/lovable-uploads/d9331435-119c-4081-ab83-f2e4e9e003b4.png',
       alt: 'Elegant dining setup at Eleven Restaurant',
-      title: 'FINE DINING',
-      subtitle: 'Luxury meets authenticity.',
-      ctaText: 'Learn More',
-      buttonText: 'Explore'
+      title: 'Your Night\'s Perfect Backdrop:',
+      subtitle: 'Our space is designed for moments that last.',
+      ctaText: '',
+      buttonText: 'make a reservation'
     },
     {
       image: '/lovable-uploads/ca3b7cea-4f05-4b60-8bf0-0048e0335bec.png',
       alt: 'Food and drinks at Eleven Restaurant',
-      title: 'CULINARY EXCELLENCE',
-      subtitle: 'Luxury meets authenticity.',
-      ctaText: 'Learn More',
+      title: 'Local Vibe & Pride:',
+      subtitle: 'Come for the food, stay for the energy',
+      ctaText: '',
       buttonText: 'Explore'
     },
     {
       image: '/lovable-uploads/d4bc3f93-63d2-44d7-844c-398cae6561ca.png',
       alt: 'Cocktail toast at Eleven bar in Savanna-la-Mar',
-      title: 'UNFORGETTABLE MOMENTS',
-      subtitle: 'Discover our unique offerings and experience the Eleven difference.',
-      ctaText: 'Learn More',
-      buttonText: 'Explore'
+      title: 'MEET ME AT ELEVEN',
+      subtitle: '',
+      ctaText: '',
+      buttonText: 'Make a reservation'
     },
   ];
 
@@ -65,7 +65,11 @@ const HeroSlideshow = () => {
   };
 
   const handleSlideAction = (slide: typeof slides[0]) => {
-    if (slide.buttonText === 'Reserve') {
+    if (slide.buttonText === 'buy your tickets') {
+      window.open('tel:+18762239926', '_self');
+    } else if (slide.buttonText === 'checkout our menu') {
+      window.location.href = '/menu';
+    } else if (slide.buttonText === 'make a reservation' || slide.buttonText === 'Make a reservation') {
       window.open('https://form.typeform.com/to/B36XKi0i', '_self');
     } else {
       // For other slides, you can add specific actions here

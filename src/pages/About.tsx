@@ -9,12 +9,20 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-gradient-dark">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+      <section className="pt-24 pb-20 bg-gradient-dark relative">
+        <div className="absolute inset-0">
+          <img
+            src="/lovable-uploads/22ec8063-0870-4529-b074-b1736f81aa32.png"
+            alt="Eleven Restaurant exterior at night"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-overlay"></div>
+        </div>
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             About Eleven
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             A culinary destination where Jamaican tradition meets modern sophistication
           </p>
         </div>
@@ -35,18 +43,8 @@ const About = () => {
               <h2 className="text-4xl font-bold text-foreground mb-6">
                 Our Story
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Born from a passion for authentic Jamaican cuisine and contemporary dining experiences, 
-                Eleven Restaurant & Lounge has become Westmoreland's premier destination for discerning food lovers.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Located in the vibrant heart of Savanna-la-Mar, we draw inspiration from Jamaica's rich culinary 
-                heritage while embracing international influences. Our upscale concept celebrates local ingredients, 
-                traditional techniques, and innovative presentation.
-              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Every dish tells a story, every cocktail is crafted with precision, and every evening 
-                promises an unforgettable journey through taste, culture, and hospitality.
+                Why We Exist: Simple: Savanna-la-Mar needed a place where quality meets convenience. No more compromising on your dining experience just because you live in a smaller town.
               </p>
             </div>
           </div>
@@ -68,12 +66,12 @@ const About = () => {
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Wednesday - Saturday</span>
-                    <span className="text-foreground font-medium">5:00 PM - 2:00 AM</span>
+                    <span className="text-muted-foreground">Saturday</span>
+                    <span className="text-foreground font-medium">11:00 AM - 11:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Monday - Tuesday</span>
-                    <span className="text-foreground font-medium">Closed</span>
+                    <span className="text-muted-foreground">Sunday</span>
+                    <span className="text-foreground font-medium">4:00 PM - 11:00 PM</span>
                   </div>
                 </div>
               </div>
@@ -81,15 +79,11 @@ const About = () => {
               <div className="bg-card rounded-lg p-8 border border-border">
                 <div className="flex items-center mb-4">
                   <Clock className="text-primary mr-3" size={24} />
-                  <h3 className="text-xl font-semibold text-foreground">Sunday Brunch</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Additional Hours</h3>
                 </div>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Sunday</span>
-                    <span className="text-foreground font-medium">11:00 AM - 4:00 PM</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4">
-                    Enjoy our special brunch menu featuring Jamaican classics and international favorites
+                  <p className="text-sm text-muted-foreground">
+                    Operating hours may vary during holidays and special events. Please call ahead to confirm availability.
                   </p>
                 </div>
               </div>

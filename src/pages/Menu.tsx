@@ -15,12 +15,20 @@ const Menu = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-gradient-dark">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+      <section className="pt-24 pb-20 bg-gradient-dark relative">
+        <div className="absolute inset-0">
+          <img
+            src="/lovable-uploads/99f3d3ec-aaaf-489c-afa3-75cbb4fd7414.png"
+            alt="Delicious pasta dish at Eleven Restaurant"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-overlay"></div>
+        </div>
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Our Menu
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Authentic Jamaican flavors meet international sophistication
           </p>
         </div>

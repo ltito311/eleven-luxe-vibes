@@ -15,8 +15,8 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/lovable-uploads/a012c195-668c-4615-9a74-3811184aab0b.png"
-                alt="Karaoke performance at Eleven Restaurant and Lounge"
+                src="/lovable-uploads/46dc8132-34b1-4396-96bf-4335d52f05cb.png"
+                alt="Eleven Restaurant branded beverages and takeout bags"
                 className="w-full h-auto rounded-lg shadow-luxury"
               />
             </div>
@@ -24,13 +24,8 @@ const Home = () => {
               <h2 className="text-4xl font-bold text-foreground mb-6">
                 Where Luxury Meets Authenticity
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Step into an atmosphere where premium ambiance perfectly complements our curated music selection. 
-                Our commitment to standout service ensures every moment at Eleven is exceptional.
-              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From intimate dinners to celebratory gatherings, our sophisticated space provides 
-                the perfect backdrop for life's most memorable moments.
+                Born from necessity, built with passion. Eleven exists because Savanna-la-Mar deserved better. We're not just serving food – we're serving the experience this town has been missing.
               </p>
             </div>
           </div>

@@ -11,18 +11,18 @@ const UniversalSections = () => {
   const featureCards = [
     {
       image: '/lovable-uploads/17941b00-ca86-4e4c-8639-4115a95ae8a7.png',
-      title: 'Gourmet Dining',
-      description: 'Authentic Jamaican cuisine with international flair'
+      title: 'What You Came For:',
+      description: 'Island approved chef certified.'
     },
     {
       image: '/lovable-uploads/748e6f00-ba22-4159-8b64-c8ad15cb16b2.png',
-      title: 'Signature Cocktails',
-      description: 'Handcrafted drinks using premium spirits'
+      title: 'OUR SIGNATURE COCKTAILS:',
+      description: 'The perfect complement to every conversation. Strong enough for business talk, smooth enough for celebration, creative enough to keep things interesting.'
     },
     {
       image: '/lovable-uploads/4e50d1e1-d5c0-4aac-afda-f32c6831604c.png',
-      title: 'Elegant Lounge',
-      description: 'Sophisticated atmosphere for any occasion'
+      title: 'BAR AND LOUNGE:',
+      description: 'Where comfort meets sophistication. An environment that works for your 3pm meeting and your 9pm celebration. Quality space for quality people.'
     },
     {
       image: '/lovable-uploads/df2e13fe-7905-4aa9-8a2a-a1909af42216.png',
@@ -85,26 +85,15 @@ const UniversalSections = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Reviews Section */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-foreground mb-16">
             What Our Guests Say
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-card border-border p-8 text-center">
-                <Quote className="mx-auto mb-4 text-primary" size={32} />
-                <p className="text-lg text-foreground mb-4 italic">
-                  "{testimonial}"
-                </p>
-                <div className="flex justify-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-primary fill-current" size={16} />
-                  ))}
-                </div>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div className="elfsight-app-a7ef7f22-e0ff-4648-80b1-4a8c2a369055" data-elfsight-app-lazy></div>
           </div>
         </div>
       </section>

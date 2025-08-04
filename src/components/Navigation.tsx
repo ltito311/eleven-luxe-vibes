@@ -17,9 +17,8 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', path: '/about' },
-    { name: 'Menu', path: '/menu' },
     { name: 'Contact', path: '/contact' },
+    { name: 'About', path: '/about' },
   ];
 
   const handleReservation = () => {
@@ -66,20 +65,20 @@ const Navigation = () => {
               </Link>
             ))}
             <Button 
-              variant="outline" 
-              size="lg"
-              onClick={handleCall}
-              className="ml-4"
-            >
-              Call Us
-            </Button>
-            <Button 
               variant="reserve" 
               size="lg"
               onClick={handleReservation}
-              className="ml-2"
+              className="ml-4"
             >
               Book Now
+            </Button>
+            <Button 
+              variant="luxury" 
+              size="lg"
+              onClick={handleCall}
+              className="ml-2"
+            >
+              Call Us
             </Button>
           </div>
 
@@ -109,20 +108,20 @@ const Navigation = () => {
                 </Link>
               ))}
               <Button 
-                variant="outline" 
-                size="lg"
-                onClick={handleCall}
-                className="w-full mb-2"
-              >
-                Call Us
-              </Button>
-              <Button 
                 variant="reserve" 
                 size="lg"
                 onClick={handleReservation}
-                className="w-full"
+                className="w-full mb-2"
               >
                 Book Now
+              </Button>
+              <Button 
+                variant="luxury" 
+                size="lg"
+                onClick={handleCall}
+                className="w-full"
+              >
+                Call Us
               </Button>
             </div>
           </div>

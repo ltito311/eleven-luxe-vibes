@@ -18,12 +18,20 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-20 bg-gradient-dark">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+      <section className="pt-24 pb-20 bg-gradient-dark relative">
+        <div className="absolute inset-0">
+          <img
+            src="/lovable-uploads/011ba197-5594-445d-b0cd-c0daf25fb9d9.png"
+            alt="Eleven Restaurant exterior at night with beautiful lighting"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-overlay"></div>
+        </div>
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Contact Us
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Get in touch for reservations, events, or any inquiries
           </p>
         </div>
@@ -137,24 +145,16 @@ const Contact = () => {
                     <Clock className="text-primary" size={20} />
                     <h3 className="text-xl font-semibold text-foreground">Operating Hours</h3>
                   </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Mon</span>
-                      <span className="text-foreground">5:00 PM - 2:00 AM</span>
+                    <div className="space-y-2">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Saturday</span>
+                        <span className="text-foreground">11:00 AM - 11:00 PM</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Sunday</span>
+                        <span className="text-foreground">4:00 PM - 11:00 PM</span>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Wed - Sat</span>
-                      <span className="text-foreground">5:00 PM - 2:00 AM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Sunday</span>
-                      <span className="text-foreground">5:00 PM - 11:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Tuesday</span>
-                      <span className="text-foreground">Closed</span>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </div>
