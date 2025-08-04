@@ -9,7 +9,7 @@ const HeroSlideshow = () => {
     {
       image: '/lovable-uploads/1276fe18-4ab1-4034-8294-c26116f74d27.png',
       alt: 'LADEN Event at Eleven Restaurant & Lounge',
-      title: 'Celebrate With us [BLACK IS SEXY]',
+      title: 'Celebrate With us BLACK IS SEXY',
       subtitle: '',
       ctaText: '',
       buttonText: 'buy your tickets'
@@ -17,7 +17,7 @@ const HeroSlideshow = () => {
     {
       image: '/lovable-uploads/f29b347c-abdd-4904-b69b-b2fbfa8edaa7.png',
       alt: 'Signature cocktail at Eleven Restaurant',
-      title: 'Your Vibe, Poured:',
+      title: 'Your Vibe, Poured',
       subtitle: 'The perfect pour for the perfect night. From classic favorites to new creations, find the drink that matches your energy.',
       ctaText: '',
       buttonText: 'checkout our menu'
@@ -25,7 +25,7 @@ const HeroSlideshow = () => {
     {
       image: '/lovable-uploads/d9331435-119c-4081-ab83-f2e4e9e003b4.png',
       alt: 'Elegant dining setup at Eleven Restaurant',
-      title: 'Your Night\'s Perfect Backdrop:',
+      title: 'Your Night\'s Perfect Backdrop',
       subtitle: 'Our space is designed for moments that last.',
       ctaText: '',
       buttonText: 'make a reservation'
@@ -33,10 +33,10 @@ const HeroSlideshow = () => {
     {
       image: '/lovable-uploads/ca3b7cea-4f05-4b60-8bf0-0048e0335bec.png',
       alt: 'Food and drinks at Eleven Restaurant',
-      title: 'Local Vibe & Pride:',
-      subtitle: 'Come for the food, stay for the energy',
+      title: 'come and pull up a chair',
+      subtitle: 'The kitchen\'s hot and the bar\'s cold.',
       ctaText: '',
-      buttonText: 'Explore'
+      buttonText: 'checkout our menu'
     },
     {
       image: '/lovable-uploads/d4bc3f93-63d2-44d7-844c-398cae6561ca.png',

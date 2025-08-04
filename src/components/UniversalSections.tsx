@@ -11,17 +11,17 @@ const UniversalSections = () => {
   const featureCards = [
     {
       image: '/lovable-uploads/17941b00-ca86-4e4c-8639-4115a95ae8a7.png',
-      title: 'What You Came For:',
+      title: 'What You Came For',
       description: 'Island approved chef certified.'
     },
     {
       image: '/lovable-uploads/748e6f00-ba22-4159-8b64-c8ad15cb16b2.png',
-      title: 'OUR SIGNATURE COCKTAILS:',
+      title: 'OUR SIGNATURE COCKTAILS',
       description: 'The perfect complement to every conversation. Strong enough for business talk, smooth enough for celebration, creative enough to keep things interesting.'
     },
     {
       image: '/lovable-uploads/4e50d1e1-d5c0-4aac-afda-f32c6831604c.png',
-      title: 'BAR AND LOUNGE:',
+      title: 'BAR AND LOUNGE',
       description: 'Where comfort meets sophistication. An environment that works for your 3pm meeting and your 9pm celebration. Quality space for quality people.'
     },
     {
@@ -102,10 +102,10 @@ const UniversalSections = () => {
       <section className="py-20 bg-gradient-dark text-center">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Ready for an Unforgettable Experience?
+            What Happens After Last Call?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join us for an evening of exceptional dining, craft cocktails, and sophisticated ambiance.
+            The real evening begins when most places close. Step inside and find out why.
           </p>
           <Button 
             variant="luxury" 

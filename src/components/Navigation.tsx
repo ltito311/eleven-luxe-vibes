@@ -17,6 +17,7 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
+    { name: 'Menu', path: '/menu' },
     { name: 'Contact', path: '/contact' },
     { name: 'About', path: '/about' },
   ];

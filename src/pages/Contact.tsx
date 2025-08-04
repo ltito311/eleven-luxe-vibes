@@ -100,7 +100,7 @@ const Contact = () => {
                     <Button 
                       variant="luxury" 
                       size="lg"
-                      onClick={() => window.open('tel:+1876XXXXXXX')}
+                      onClick={() => window.open('tel:+18762239926')}
                       className="flex-1"
                     >
                       Give Us a Call
@@ -111,7 +111,7 @@ const Contact = () => {
                       <Phone className="text-primary flex-shrink-0" size={20} />
                       <div>
                         <p className="text-foreground font-medium">Phone</p>
-                        <p className="text-muted-foreground">+1 (876) XXX-XXXX</p>
+                        <p className="text-muted-foreground">+1 (876) 223-9926</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
