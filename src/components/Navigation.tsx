@@ -38,27 +38,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="logo-container">
-            <svg 
-              className="logo-svg h-8 md:h-10 w-auto" 
-              viewBox="0 0 800 200" 
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Eleven Restaurant Logo"
-            >
-              {/* Left side horizontal lines */}
-              <rect x="50" y="60" width="80" height="12" rx="6" fill="white"/>
-              <rect x="50" y="85" width="60" height="12" rx="6" fill="white"/>
-              <rect x="50" y="110" width="100" height="12" rx="6" fill="white"/>
-              
-              {/* ELEVEN text */}
-              <g fill="white" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="72">
-                <text x="180" y="115">ELEVEN</text>
-              </g>
-              
-              {/* RESTAURANT AND LOUNGE subtitle */}
-              <g fill="white" fontFamily="Arial, sans-serif" fontWeight="normal" fontSize="16" letterSpacing="2">
-                <text x="180" y="140">RESTAURANT AND LOUNGE</text>
-              </g>
-            </svg>
+            <img 
+              src="/lovable-uploads/c35dc170-37d5-4b4b-ae1f-5c4b06b1bf12.png"
+              alt="Eleven Restaurant Logo"
+              className="h-8 md:h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

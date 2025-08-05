@@ -57,6 +57,8 @@ const ChatWidget = () => {
             src="https://bizflowwithn8n.app.n8n.cloud/webhook/ffcf29b6-19e9-40fd-81a6-132910560043/chat"
             className="w-full h-[calc(100%-60px)] border-none bg-white"
             title="Chat with Eleven Restaurant"
+            allow="microphone"
+            loading="lazy"
           />
         </div>
       )}
