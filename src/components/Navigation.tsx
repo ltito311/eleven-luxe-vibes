@@ -41,7 +41,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/c35dc170-37d5-4b4b-ae1f-5c4b06b1bf12.png"
               alt="Eleven Restaurant Logo"
-              className="h-12 md:h-16 lg:h-18 w-auto"
+              className="h-16 md:h-20 lg:h-24 w-auto"
             />
           </Link>
 
