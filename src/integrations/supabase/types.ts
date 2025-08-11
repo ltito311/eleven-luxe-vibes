@@ -14,57 +14,133 @@ export type Database = {
   }
   public: {
     Tables: {
-      menu_items: {
+      blog_contents: {
         Row: {
-          available: boolean | null
-          category: string | null
+          blog_id: string | null
+          content: Json
+          content_type: string
           created_at: string | null
-          description: string | null
-          id: number
-          name: string
-          price: number | null
+          id: string
+          position: number | null
           updated_at: string | null
         }
         Insert: {
-          available?: boolean | null
-          category?: string | null
+          blog_id?: string | null
+          content: Json
+          content_type: string
           created_at?: string | null
-          description?: string | null
-          id?: number
-          name: string
-          price?: number | null
+          id?: string
+          position?: number | null
           updated_at?: string | null
         }
         Update: {
-          available?: boolean | null
-          category?: string | null
+          blog_id?: string | null
+          content?: Json
+          content_type?: string
           created_at?: string | null
-          description?: string | null
-          id?: number
-          name?: string
-          price?: number | null
+          id?: string
+          position?: number | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "blog_contents_blog_id_fkey"
+            columns: ["blog_id"]
+            isOneToOne: false
+            referencedRelation: "blogs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      blogs: {
+        Row: {
+          created_at: string | null
+          id: string
+          published_at: string | null
+          slug: string
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          published_at?: string | null
+          slug: string
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          published_at?: string | null
+          slug?: string
+          title?: string
           updated_at?: string | null
         }
         Relationships: []
       }
-      restaurant_info: {
+      page_contents: {
         Row: {
-          id: number
-          key: string
+          content: Json
+          content_type: string
+          created_at: string | null
+          id: string
+          page_id: string | null
+          position: number | null
           updated_at: string | null
-          value: string
         }
         Insert: {
-          id?: number
-          key: string
+          content: Json
+          content_type: string
+          created_at?: string | null
+          id?: string
+          page_id?: string | null
+          position?: number | null
           updated_at?: string | null
-          value: string
         }
         Update: {
-          id?: number
-          key?: string
+          content?: Json
+          content_type?: string
+          created_at?: string | null
+          id?: string
+          page_id?: string | null
+          position?: number | null
           updated_at?: string | null
-          value?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "page_contents_page_id_fkey"
+            columns: ["page_id"]
+            isOneToOne: false
+            referencedRelation: "pages"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      pages: {
+        Row: {
+          created_at: string | null
+          id: string
+          published_at: string | null
+          slug: string
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          published_at?: string | null
+          slug: string
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          published_at?: string | null
+          slug?: string
+          title?: string
+          updated_at?: string | null
         }
         Relationships: []
       }
