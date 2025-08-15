@@ -15,7 +15,7 @@ const DynamicEvents: React.FC = () => {
     );
   }
 
-  if (error || !events?.length) {
+  if (error || !events || !Array.isArray(events) || events.length === 0) {
     return null; // Hide section if no events
   }
 

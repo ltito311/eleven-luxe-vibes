@@ -14,7 +14,7 @@ const DynamicMenu: React.FC = () => {
     );
   }
 
-  if (error || !menuCategories?.length) {
+  if (error || !menuCategories || !Array.isArray(menuCategories) || menuCategories.length === 0) {
     return (
       <div className="text-center py-20">
         <p className="text-muted-foreground">Menu not available at the moment.</p>

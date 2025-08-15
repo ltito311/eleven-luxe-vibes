@@ -14,7 +14,7 @@ const DynamicTestimonials: React.FC = () => {
     );
   }
 
-  if (error || !testimonials?.length) {
+  if (error || !testimonials || !Array.isArray(testimonials) || testimonials.length === 0) {
     return null; // Hide section if no testimonials
   }
 
