@@ -33,8 +33,8 @@ const DynamicSection: React.FC<DynamicSectionProps> = ({ section }) => {
       
       <div className="relative z-10 container mx-auto px-6">
         {section.components
-          ?.sort((a: any, b: any) => a.position - b.position)
-          .map((component: any) => (
+          ?.sort((a, b) => a.position - b.position)
+          .map((component) => (
             <DynamicComponent key={component.id} component={component} />
           ))}
       </div>

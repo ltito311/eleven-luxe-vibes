@@ -31,8 +31,8 @@ const DynamicPage: React.FC<DynamicPageProps> = ({ slug }) => {
   return (
     <div className="min-h-screen">
       {page?.sections
-        ?.sort((a: any, b: any) => a.position - b.position)
-        .map((section: any) => (
+        ?.sort((a, b) => a.position - b.position)
+        .map((section) => (
           <DynamicSection key={section.id} section={section} />
         ))}
     </div>

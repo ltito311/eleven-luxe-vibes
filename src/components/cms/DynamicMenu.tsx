@@ -32,14 +32,14 @@ const DynamicMenu: React.FC = () => {
 
         <Tabs defaultValue={menuCategories[0]?.id} className="w-full">
           <TabsList className="grid w-full mb-8" style={{ gridTemplateColumns: `repeat(${menuCategories.length}, minmax(0, 1fr))` }}>
-            {menuCategories.map((category: any) => (
+            {menuCategories.map((category) => (
               <TabsTrigger key={category.id} value={category.id}>
                 {category.name}
               </TabsTrigger>
             ))}
           </TabsList>
 
-          {menuCategories.map((category: any) => (
+          {menuCategories.map((category) => (
             <TabsContent key={category.id} value={category.id}>
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-2">{category.name}</h3>
@@ -50,8 +50,8 @@ const DynamicMenu: React.FC = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {category.menu_items
-                  ?.sort((a: any, b: any) => a.position - b.position)
-                  .map((item: any) => (
+                  ?.sort((a, b) => a.position - b.position)
+                  .map((item) => (
                     <Card key={item.id}>
                       {item.image_url && (
                         <div className="aspect-video overflow-hidden rounded-t-lg">
