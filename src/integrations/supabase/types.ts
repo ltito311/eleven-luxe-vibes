@@ -7,139 +7,57 @@ export type Json =
   | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: "13.0.4"
   }
   public: {
     Tables: {
-      blog_contents: {
+      image_gallery: {
         Row: {
-          blog_id: string | null
-          content: Json
-          content_type: string
-          created_at: string | null
+          caption: string | null
           id: string
-          position: number | null
-          updated_at: string | null
+          image_url: string
+          order_index: number | null
         }
         Insert: {
-          blog_id?: string | null
-          content: Json
-          content_type: string
-          created_at?: string | null
-          id?: string
-          position?: number | null
-          updated_at?: string | null
-        }
-        Update: {
-          blog_id?: string | null
-          content?: Json
-          content_type?: string
-          created_at?: string | null
-          id?: string
-          position?: number | null
-          updated_at?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "blog_contents_blog_id_fkey"
-            columns: ["blog_id"]
-            isOneToOne: false
-            referencedRelation: "blogs"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      blogs: {
-        Row: {
-          created_at: string | null
+          caption?: string | null
           id: string
-          published_at: string | null
-          slug: string
-          title: string
-          updated_at: string | null
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          published_at?: string | null
-          slug: string
-          title: string
-          updated_at?: string | null
+          image_url: string
+          order_index?: number | null
         }
         Update: {
-          created_at?: string | null
+          caption?: string | null
           id?: string
-          published_at?: string | null
-          slug?: string
-          title?: string
-          updated_at?: string | null
+          image_url?: string
+          order_index?: number | null
         }
         Relationships: []
       }
-      page_contents: {
-        Row: {
-          content: Json
-          content_type: string
-          created_at: string | null
-          id: string
-          page_id: string | null
-          position: number | null
-          updated_at: string | null
-        }
-        Insert: {
-          content: Json
-          content_type: string
-          created_at?: string | null
-          id?: string
-          page_id?: string | null
-          position?: number | null
-          updated_at?: string | null
-        }
-        Update: {
-          content?: Json
-          content_type?: string
-          created_at?: string | null
-          id?: string
-          page_id?: string | null
-          position?: number | null
-          updated_at?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "page_contents_page_id_fkey"
-            columns: ["page_id"]
-            isOneToOne: false
-            referencedRelation: "pages"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
       pages: {
         Row: {
+          content: Json | null
           created_at: string | null
           id: string
-          published_at: string | null
-          slug: string
-          title: string
+          slug: string | null
+          title: string | null
           updated_at: string | null
         }
         Insert: {
+          content?: Json | null
           created_at?: string | null
           id?: string
-          published_at?: string | null
-          slug: string
-          title: string
+          slug?: string | null
+          title?: string | null
           updated_at?: string | null
         }
         Update: {
+          content?: Json | null
           created_at?: string | null
           id?: string
-          published_at?: string | null
-          slug?: string
-          title?: string
+          slug?: string | null
+          title?: string | null
           updated_at?: string | null
         }
         Relationships: []
@@ -149,7 +67,15 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_table_structure: {
+        Args: { target_table_name: string }
+        Returns: {
+          column_default: string
+          column_name: string
+          data_type: string
+          is_nullable: boolean
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
