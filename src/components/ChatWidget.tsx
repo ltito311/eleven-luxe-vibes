@@ -15,7 +15,7 @@ const ChatWidget = () => {
       script.innerHTML = `
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
         createChat({
-          webhookUrl: 'https://bizflowwithn8n.app.n8n.cloud/webhook/ffcf29b6-19e9-40fd-81a6-132910560043/chat'
+          webhookUrl: 'https://original311.app.n8n.cloud/webhook/2ced8158-125b-44d2-891b-17bd79dbe71d/chat'
         });
       `;
       document.head.appendChild(script);

@@ -55,7 +55,7 @@ const InstagramFeed = () => {
           Visit our Instagram page to see our latest updates
         </p>
         <a 
-          href="https://instagram.com/elevenwess" 
+          href="https://www.instagram.com/elevenwess?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-primary hover:text-primary/80 font-medium"

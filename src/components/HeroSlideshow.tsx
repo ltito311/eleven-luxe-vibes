@@ -7,12 +7,12 @@ const HeroSlideshow = () => {
 
   const slides = [
     {
-      image: '/lovable-uploads/1276fe18-4ab1-4034-8294-c26116f74d27.png',
-      alt: 'LADEN Event at Eleven Restaurant & Lounge',
-      title: 'Celebrate With us BLACK IS SEXY',
-      subtitle: '',
+      image: '/lovable-uploads/011ba197-5594-445d-b0cd-c0daf25fb9d9.png',
+      alt: 'Elegant dining experience at Eleven Restaurant',
+      title: 'Elevate Your Evening',
+      subtitle: 'Discover culinary excellence where every dish tells a story and every moment becomes a memory.',
       ctaText: '',
-      buttonText: 'buy your tickets'
+      buttonText: 'make a reservation'
     },
     {
       image: '/lovable-uploads/f29b347c-abdd-4904-b69b-b2fbfa8edaa7.png',

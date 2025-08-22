@@ -78,7 +78,14 @@ const UniversalSections = () => {
             </h2>
             <div className="flex items-center justify-center gap-2 text-muted-foreground">
               <Instagram size={24} />
-              <span className="text-lg">@elevenwess</span>
+              <a 
+                href="https://www.instagram.com/elevenwess?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-lg hover:text-primary transition-colors duration-300"
+              >
+                @elevenwess
+              </a>
             </div>
           </div>
           <InstagramFeed />

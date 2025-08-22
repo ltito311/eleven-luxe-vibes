@@ -125,7 +125,14 @@ const Contact = () => {
                       <Instagram className="text-primary flex-shrink-0" size={20} />
                       <div>
                         <p className="text-foreground font-medium">Instagram</p>
-                        <p className="text-muted-foreground">@elevenwess</p>
+                        <a 
+                          href="https://www.instagram.com/elevenwess?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                        >
+                          @elevenwess
+                        </a>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

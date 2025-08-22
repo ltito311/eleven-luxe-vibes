@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/elevenwess" 
+                href="https://www.instagram.com/elevenwess?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-primary flex-shrink-0" />
                 <span className="text-muted-foreground">
-                  +1 (876) XXX-XXXX
+                  (876) 223-9926
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -88,9 +88,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Instagram size={20} className="text-primary flex-shrink-0" />
-                <span className="text-muted-foreground">
+                <a 
+                  href="https://www.instagram.com/elevenwess?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                >
                   @elevenwess
-                </span>
+                </a>
               </div>
             </div>
           </div>
