@@ -44,7 +44,7 @@ const Contact = () => {
 
       {/* Contact Form & Info Section */}
       <section className="py-20 bg-background">
-        <div ref={contactRef} className={`container mx-auto px-6 transition-all duration-1000 ${contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={contactRef} className={`container mx-auto px-6 transition-all duration-500 ease-out ${contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             
             {/* Contact Form */}
@@ -176,7 +176,7 @@ const Contact = () => {
 
       {/* Map Section */}
       <section className="py-20 bg-secondary">
-        <div ref={mapRef} className={`container mx-auto px-6 transition-all duration-1000 delay-200 ${mapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={mapRef} className={`container mx-auto px-6 transition-all duration-500 ease-out delay-100 ${mapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">
               Visit Us
@@ -203,7 +203,7 @@ const Contact = () => {
 
       {/* Reservation CTA */}
       <section className="py-20 bg-gradient-dark text-center">
-        <div ref={ctaRef} className={`container mx-auto px-6 transition-all duration-1000 delay-300 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={ctaRef} className={`container mx-auto px-6 transition-all duration-500 ease-out delay-150 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Dine with Us?
           </h2>

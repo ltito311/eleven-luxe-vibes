@@ -39,7 +39,7 @@ const Menu = () => {
 
       {/* Menu Sections */}
       <section className="py-20 bg-background">
-        <div ref={menuRef} className={`container mx-auto px-6 transition-all duration-1000 ${menuVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={menuRef} className={`container mx-auto px-6 transition-all duration-500 ease-out ${menuVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <Tabs defaultValue="food" className="max-w-6xl mx-auto">
             <TabsList className="grid w-full grid-cols-3 mb-12 bg-secondary">
               <TabsTrigger value="food" className="text-lg py-3">Food Menu</TabsTrigger>

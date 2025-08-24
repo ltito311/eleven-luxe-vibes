@@ -48,7 +48,7 @@ const UniversalSections = () => {
     <>
       {/* Feature Cards Section */}
       <section className="py-20 bg-secondary">
-        <div ref={featureRef} className={`container mx-auto px-6 transition-all duration-1000 ${featureVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={featureRef} className={`container mx-auto px-6 transition-all duration-500 ease-out ${featureVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <h2 className="text-4xl font-bold text-center text-foreground mb-16">
             Experience at Eleven
           </h2>
@@ -78,7 +78,7 @@ const UniversalSections = () => {
 
       {/* Instagram Preview Section */}
       <section className="py-20 bg-background">
-        <div ref={instagramRef} className={`container mx-auto px-6 transition-all duration-1000 delay-200 ${instagramVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={instagramRef} className={`container mx-auto px-6 transition-all duration-500 ease-out delay-100 ${instagramVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">
               Follow Us
@@ -101,7 +101,7 @@ const UniversalSections = () => {
 
       {/* Reviews Section */}
       <section className="py-20 bg-secondary">
-        <div ref={reviewsRef} className={`container mx-auto px-6 transition-all duration-1000 delay-300 ${reviewsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={reviewsRef} className={`container mx-auto px-6 transition-all duration-500 ease-out delay-150 ${reviewsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <h2 className="text-4xl font-bold text-center text-foreground mb-16">
             What Our Guests Say
           </h2>
@@ -114,7 +114,7 @@ const UniversalSections = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-dark text-center">
-        <div ref={ctaRef} className={`container mx-auto px-6 transition-all duration-1000 delay-400 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={ctaRef} className={`container mx-auto px-6 transition-all duration-500 ease-out delay-200 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             What Happens After Last Call?
           </h2>
@@ -134,7 +134,7 @@ const UniversalSections = () => {
 
       {/* Google Map Section */}
       <section className="py-20 bg-background">
-        <div ref={mapRef} className={`container mx-auto px-6 transition-all duration-1000 delay-500 ${mapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={mapRef} className={`container mx-auto px-6 transition-all duration-500 ease-out delay-250 ${mapVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">
               Find Us

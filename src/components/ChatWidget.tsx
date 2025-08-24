@@ -46,10 +46,10 @@ const ChatWidget = () => {
   return (
     <>
       {showPing && (
-        <div className="fixed bottom-6 right-6 z-50 pointer-events-none">
+        <div className="fixed bottom-20 right-4 z-50 pointer-events-none">
           <div className="relative">
-            <div className="absolute -top-2 -right-2 w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
-            <div className="absolute -top-2 -right-2 w-4 h-4 bg-red-500 rounded-full"></div>
+            <div className="absolute -top-1 -left-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></div>
+            <div className="absolute -top-1 -left-1 w-3 h-3 bg-red-500 rounded-full"></div>
           </div>
         </div>
       )}
