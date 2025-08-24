@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const ChatWidget = () => {
+  const [showPing, setShowPing] = useState(true);
+
   useEffect(() => {
     // Load the n8n chat CSS
     const link = document.createElement('link');
@@ -19,17 +21,40 @@ const ChatWidget = () => {
         });
       `;
       document.head.appendChild(script);
+
+      // Hide ping after chat loads
+      setTimeout(() => {
+        const chatButton = document.querySelector('[data-chat-button]') || document.querySelector('.n8n-chat-button');
+        if (chatButton) {
+          chatButton.addEventListener('click', () => setShowPing(false));
+        }
+      }, 2000);
     };
 
     loadChat();
 
-    // Cleanup function to remove the CSS link
+    // Auto-hide ping after 30 seconds
+    const pingTimeout = setTimeout(() => setShowPing(false), 30000);
+
+    // Cleanup function
     return () => {
-      document.head.removeChild(link);
+      if (link.parentNode) document.head.removeChild(link);
+      clearTimeout(pingTimeout);
     };
   }, []);
 
-  return null;
+  return (
+    <>
+      {showPing && (
+        <div className="fixed bottom-6 right-6 z-50 pointer-events-none">
+          <div className="relative">
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-red-500 rounded-full"></div>
+          </div>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default ChatWidget;

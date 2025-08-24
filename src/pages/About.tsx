@@ -2,8 +2,12 @@ import Navigation from '@/components/Navigation';
 import UniversalSections from '@/components/UniversalSections';
 import Footer from '@/components/Footer';
 import { Clock, MapPin } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const About = () => {
+  const { ref: storyRef, isVisible: storyVisible } = useScrollAnimation();
+  const { ref: hoursRef, isVisible: hoursVisible } = useScrollAnimation();
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -30,7 +34,7 @@ const About = () => {
 
       {/* Our Story Section */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+        <div ref={storyRef} className={`container mx-auto px-6 transition-all duration-1000 ${storyVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
@@ -53,7 +57,7 @@ const About = () => {
 
       {/* Operating Hours Section */}
       <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-6">
+        <div ref={hoursRef} className={`container mx-auto px-6 transition-all duration-1000 delay-200 ${hoursVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-foreground mb-12">
               Operating Hours

@@ -13,25 +13,25 @@ const InstagramFeed = () => {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    const initializeWidget = () => {
-      try {
-        // Check if Elfsight platform is available
-        if (window.eapps) {
-          setIsLoading(false);
-          setHasError(false);
-        } else {
-          // Wait for platform to load
-          setTimeout(initializeWidget, 100);
-        }
-      } catch (error) {
-        console.error('Error initializing Instagram widget:', error);
+    const loadScript = () => {
+      // Load the Elfsight platform script
+      const script = document.createElement('script');
+      script.src = 'https://elfsightcdn.com/platform.js';
+      script.async = true;
+      document.head.appendChild(script);
+      
+      script.onload = () => {
+        setIsLoading(false);
+        setHasError(false);
+      };
+      
+      script.onerror = () => {
         setHasError(true);
         setIsLoading(false);
-      }
+      };
     };
 
-    // Start initialization after a short delay
-    setTimeout(initializeWidget, 500);
+    loadScript();
 
     // Fallback timeout
     const timeout = setTimeout(() => {
@@ -75,7 +75,7 @@ const InstagramFeed = () => {
         </div>
       )}
       <div 
-        className={`elfsight-app-e34192b5-821d-49c6-a926-ff653ffd2dca ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}
+        className={`elfsight-app-49f1a40a-e1f0-480e-98bb-6ddd6a5dec14 ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}
         data-elfsight-app-lazy
       ></div>
     </div>
